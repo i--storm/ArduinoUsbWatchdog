@@ -24,8 +24,7 @@ void loop()
   if (count > 10){
     Serial.println("RESETTING!!!");
     digitalWrite(LedPin,LOW); 
-    digitalWrite(ResetPin,HIGH);
-    //rest=blink(4);
+    digitalWrite(ResetPin,HIGH);    
   }else{  
     if (Serial.available() > 0) 
     {    

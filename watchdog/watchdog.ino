@@ -2,7 +2,7 @@ int LedPin = 17;
 int ResetPin = 10;
 int val = 0;
 int count = 0;
-int startDelay = 120;//seconds
+int startDelay = 12;//seconds
 void setup() 
 {
   Serial.begin(9600);
@@ -50,15 +50,15 @@ void loop()
   
 }
 
-int blink(int num){
-  int rest=1000;
+int blink(int num){  
+  int sum=0;
   for(int i=1; i<=num; i++){
     digitalWrite(LedPin, LOW);
-    delay(200);
+    delay(100);
     digitalWrite(LedPin, HIGH);
-    delay(200);
-    rest=rest-400;
+    delay(100);   
+    sum=sum+200;
   }
-  return rest;
+  return sum;
 }
 

@@ -1,0 +1,1 @@
+start  PowerShell.exe -ExecutionPolicy ByPass -File "c:\path_to_file\script.ps1"

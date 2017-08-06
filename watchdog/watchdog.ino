@@ -2,7 +2,7 @@ int LedPin = 17;
 int ResetPin = 10;
 int val = 0;
 int count = 0;
-int startDelay = 10;
+int startDelay = 120;//seconds
 void setup() 
 {
   Serial.begin(9600);
